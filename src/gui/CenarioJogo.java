@@ -3,9 +3,6 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.awt.event.MouseMotionListener;
 import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -19,8 +16,7 @@ import negocio.personagem.NaveAlienigena;
 import negocio.personagem.NaveTerraquea;
 import negocio.personagem.Personagem;
 
-public class CenarioJogo extends JPanel implements MouseMotionListener,KeyListener ,
-		MouseListener{	
+public class CenarioJogo extends JPanel implements KeyListener{	
 	private static final long serialVersionUID = 1L;
 	private JogoListener listener;
 	private JogoControle controle;
@@ -31,8 +27,6 @@ public class CenarioJogo extends JPanel implements MouseMotionListener,KeyListen
 	public CenarioJogo() {
 		controle = new JogoControle();
 		setBackground(Color.BLACK);
-		this.addMouseMotionListener(this);
-		this.addMouseListener(this);
 		this.addKeyListener(this);
 		this.setFocusable(true);
 		this.requestFocus();
@@ -58,37 +52,6 @@ public class CenarioJogo extends JPanel implements MouseMotionListener,KeyListen
 		}
 	}
 
-	@Override
-	public void mouseDragged(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void mouseMoved(MouseEvent e) {
-
-	}
-
-	@Override
-	public void mouseClicked(MouseEvent e) {
-		
-	}
-
-	@Override
-	public void mouseEntered(MouseEvent e) {
-	}
-
-	@Override
-	public void mouseExited(MouseEvent e) {
-	}
-
-	@Override
-	public void mousePressed(MouseEvent e) {
-	}
-
-	@Override
-	public void mouseReleased(MouseEvent e) {
-	}
 	
 	public void teclaPressionada(int code){
 		switch (code) {
