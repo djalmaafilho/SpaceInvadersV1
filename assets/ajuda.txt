@@ -1,0 +1,10 @@
+
+Game Casa Console.
+
+Ande pelos comodos da casa usando as teclas 
+
+(Esquerda , Direita , Cima  , Baixo ) jogador 1
+
+ou (A,S,D,W) jogador 2
+
+Pegue todos os Artefatos e acumule pontos.
